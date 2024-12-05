@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidugu&display=swap');
+
+body {
+    background-color: burlywood;
+    font-family:"Gidugu", sans-serif ;
+    text-size-adjust: 100px;
+}
+.container{
+    background-color: rgb(48, 226, 226);
+    margin:0 auto;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    padding-bottom: 10px;
+    
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(252, 210, 155);
+    background-color: rgb(37, 10, 10);
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+header nav a.hover {
+    color: black;
+    background-color: beige;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+    margin: 10px auto;
+    width: 80%;
+}
+
+footer{
+    background-color: rgb(11, 181, 124);
+    color: rgb(56, 119, 235);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+@media (min-width:650px){
+   
+    header nav{
+        flex-direction: row;
+        gap: 20px;
+
+    }
+    main{
+       display: flex;
+       gap: 70px; 
+       margin: 0 30px;
+
+    }
+}
+
+/*form*/
+
+ form{
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+ }
+
+ .send-button-container{
+    margin: 0 auto;
+ }
+ label{
+    display:block;
+    padding-bottom: 7px;
+ }
+
+ /*.send-button-container input {
+    width: 30%;
+    min-width: 100px;
+ }
+*/
+
+@media (min-width:650px){
+    form{
+        grid-template-columns: 1fr 1fr;
+    }
+    .send-button-container{
+        grid-column: span 2;
+    }
+}
