@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gidugu&display=swap');
 
-h1{
-    color: aliceblue;
-}
 body {
     background-color: rgb(10, 0, 83);
     font-family:"Gidugu", sans-serif ;
-    text-size-adjust: 100px;
+    text-size-adjust: 120px;
+    font-size: 30px;
     
 }
 .container{
@@ -52,6 +50,10 @@ article{
     background-color: rgb(97, 218, 255);
     margin: 10px auto;
     width: 80%;
+}
+
+ p{
+    font-size: 30px;
 }
 
 footer{
